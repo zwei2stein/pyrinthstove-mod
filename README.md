@@ -1,7 +1,7 @@
 
 # Kuru Mod for Rimworld
 
-Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=>
+Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=3740618688>
 
 ## Quick about
 
