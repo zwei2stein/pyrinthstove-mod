@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ResearchProjectDef>
+    <defName>PyrinthStove_PyrinthTemperatureRegulationResearch</defName>
+    <label>pyrinth temperature regulation</label>
+    <description>Design and build facitilies using pyrinth crystals as a heat source.</description>
+    <baseCost>400</baseCost>
+    <researchViewX>1.50</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <heldByFactionCategoryTags Inherit="False" />
+    <techLevel>Medieval</techLevel>
+    <tab>DV_EpochsTab</tab>
+  </ResearchProjectDef>
+
+</Defs>
+

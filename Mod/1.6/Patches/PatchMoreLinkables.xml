@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>More Linkables</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="PyrinthStove_PyrinthStove"]/comps</xpath>
+          <value>
+            <li Class="CompProperties_AffectedByFacilities">
+              <linkableFacilities>
+                <li>KitchenCupboard</li>
+              </linkableFacilities>
+            </li>
+          </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,31 @@
+[h1]Pyrinth Stove[/h1]
+
+Addon to Epochs - Pyrinth 
+
+[h2]Features[/h2] 
+
+[list]
+    [*]Pyrinth Stove, a pyrinth-powered cooking stove. To cook food.
+[/list]
+
+That is it. Research pyrinth temperature regulation and built it. It requires fuel in form of pyrinth, but fairly rarely. 
+
+[hr][/hr]
+
+[h2]Mod compatibility[/h2]
+
+[list]
+    [*]More Linkables
+[/list]
+
+[hr][/hr]
+
+[url=https://github.com/zwei2stein/pyrinthstove-mod/] source code [/url] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3651274426] my other mods [/url] 
+
+[hr][/hr]
+
+[h2]Thanks[/h2]
+
+A lot of thanks to rimworld modding discord for help.

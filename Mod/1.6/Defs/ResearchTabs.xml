@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- To add a research tab, make a new ResearchTabDef here and then set the <tab> field of your research project to match it -->
+  
+  <ResearchTabDef>
+    <defName>DV_EpochsTab</defName>
+    <label>Epochs</label>
+    <generalTitle>Epochs research projects</generalTitle>
+    <generalDescription>The tab for all manners of research projects for the Epochs mod series.</generalDescription>
+  </ResearchTabDef>
+
+</Defs>

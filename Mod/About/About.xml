@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Pyrinth Stove</name>
+    <author>zwei2stein</author>
+    <packageId>zwei2stein.PyrinthStove</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modVersion>1.0</modVersion>
+    <description>Pyrinth powered cooking stove.</description>
+  <modDependencies>
+    <li>
+      <packageId>det.epochspyrinth</packageId>
+      <displayName>Epochs - Pyrinth</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3336544632</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+    <loadAfter>
+        <li>det.epochspyrinth</li>
+        <li>4loris4.MoreLinkables</li>
+    </loadAfter>
+</ModMetaData>
