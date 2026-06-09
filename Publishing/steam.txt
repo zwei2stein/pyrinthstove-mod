@@ -8,7 +8,7 @@ Addon to Epochs - Pyrinth
     [*]Pyrinth Stove, a pyrinth-powered cooking stove. To cook food.
 [/list]
 
-That is it. Research pyrinth temperature regulation and built it. It requires fuel in form of pyrinth, but fairly rarely. 
+That is it. Research pyrinth temperature regulation and built it. It requires fuel in form of pyrinth, but fairly rarely. You can turn fuel consumption off in settings.
 
 [hr][/hr]
 

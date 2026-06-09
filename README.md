@@ -9,6 +9,8 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=374
 
 ![](/Publishing/01_basics.png)
 
+![](/Publishing/02_config.png)
+
 ## License
 
 All original artwork included is Copyright © 2025 Petr Prokop, and distributed under the Creative Commons License Attribution-ShareAlike 4.0 International, or CC-BY-SA 4.0I.

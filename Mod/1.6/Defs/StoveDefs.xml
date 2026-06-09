@@ -70,7 +70,7 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
-      <li Class="CompProperties_Refuelable">
+      <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
         <fuelConsumptionRate>0.1</fuelConsumptionRate>
         <!-- 3 pyrinth per quardum -->
         <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)--> 

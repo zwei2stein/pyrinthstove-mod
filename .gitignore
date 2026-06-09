@@ -1,0 +1,6 @@
+/Assemblies/*
+/Source/PyrinthStove/packages/*
+/Source/PyrinthStove/bin/*
+/Source/PyrinthStove/obj/*
+/Source/PyrinthStove/.idea/*
+Source/PyrinthStove/PyrinthStove.sln.DotSettings.user
