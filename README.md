@@ -1,5 +1,5 @@
 
-# Kuru Mod for Rimworld
+# Pyrinth Stove & Smithy mod for Rimworld
 
 Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=3740618688>
 
