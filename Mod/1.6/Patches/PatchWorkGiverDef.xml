@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+  
     <Operation Class="PatchOperationAdd">
-      <xpath>/Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+      <xpath>/Defs/WorkGiverDef/fixedBillGiverDefs[li = 'FueledStove']</xpath>
           <value>
             <li>PyrinthStove_PyrinthStove</li>
           </value>
     </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/recipeMaker/recipeUsers[li = 'FueledStove']</xpath>
+          <value>
+            <li>PyrinthStove_PyrinthStove</li>
+          </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs/WorkGiverDef/fixedBillGiverDefs[li = 'FueledSmithy']</xpath>
+          <value>
+            <li>PyrinthStove_PyrinthSmithy</li>
+          </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+     <xpath>/Defs/ThingDef/recipeMaker/recipeUsers[li = 'FueledSmithy']</xpath>
+      <value>
+        <li>PyrinthStove_PyrinthSmithy</li>
+      </value>     
+    </Operation>
+
 </Patch>

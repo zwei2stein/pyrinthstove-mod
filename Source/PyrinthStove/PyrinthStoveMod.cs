@@ -44,6 +44,21 @@ namespace PyrinthStove
             
             listingStandard.GapLine();
             
+            listingStandard.Label("PyrinthStoveModSettings_Smithy_label".Translate());
+
+            listingStandard.Indent(gapWidth);
+            listingStandard.ColumnWidth -= gapWidth;
+            
+            listingStandard.CheckboxLabeled(
+                "PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy".Translate(),
+                ref PyrinthStoveModSettings.fuelConsumptionForSmithy,
+                "PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy_tooltip".Translate());
+            
+            listingStandard.Outdent(gapWidth);
+            listingStandard.ColumnWidth += gapWidth;
+            
+            listingStandard.GapLine();            
+            
             listingStandard.End();
             
             base.DoSettingsWindowContents(inRect);

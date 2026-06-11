@@ -25,9 +25,6 @@
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
-    <costList>
-      <Steel>80</Steel>
-    </costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -70,7 +67,7 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
-      <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
+      <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableStove">
         <fuelConsumptionRate>0.1</fuelConsumptionRate>
         <!-- 3 pyrinth per quardum -->
         <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)--> 
@@ -88,6 +85,14 @@
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>4</heatPerSecond>
       </li>
+      <li Class="CompProperties_Effecter">
+        <effecterDef>DV_PyrinthSparkingEffect</effecterDef>
+      </li>
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(192,117,77,0)</glowColor>
+      </li>      
     </comps>
     <tickerType>Normal</tickerType>
     <placeWorkers>
@@ -101,6 +106,102 @@
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
     <researchPrerequisites>
+      <li>PyrinthStove_PyrinthTemperatureRegulationResearch</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>PyrinthStove_PyrinthSmithy</defName>
+    <label>pyrinth smithy</label>
+    <description>A pyrinth powered station for smithing non-mechanical weapons and tools.</description>
+    <thingClass>Building_WorkTable_HeatPush</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/PyrinthStove_PyrinthSmithy</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(2.8, 0.35, 0.59)</volume>
+        <offset>(0, 0, 0.08)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <DV_Pyrinth>90</DV_Pyrinth>      
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2500</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableSmithy">
+        <fuelConsumptionRate>0.1</fuelConsumptionRate>
+        <!-- 3 pyrinth per quardum -->
+        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)--> 
+        <fuelCapacity>10.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>DV_Pyrinth</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>4</heatPerSecond>
+      </li>      
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Effecter">
+        <effecterDef>DV_PyrinthSparkingEffect</effecterDef>
+      </li>
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(192,117,77,0)</glowColor>
+      </li>      
+    </comps>
+    <tickerType>Normal</tickerType>    
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Smithing</li>
       <li>PyrinthStove_PyrinthTemperatureRegulationResearch</li>
     </researchPrerequisites>
   </ThingDef>

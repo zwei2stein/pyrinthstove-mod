@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-    <PyrinthStoveModName>Pyrinth Stove</PyrinthStoveModName>
+    <PyrinthStoveModName>Pyrinth Stove &amp; Smithy</PyrinthStoveModName>
 
     <PyrinthStoveModSettings_Stove_label>Stove:</PyrinthStoveModSettings_Stove_label>
 
@@ -9,6 +9,12 @@
 
     <PyrinthStoveModSettings_Stove_fuelConsumptionForStove_tooltip>When turned on, stove continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Stove_fuelConsumptionForStove_tooltip>
 
-    <PyrinthStoveModSettings_Stove_TurnedOff_Inspect>(Fuel consumption turned off)</PyrinthStoveModSettings_Stove_TurnedOff_Inspect>
+    <PyrinthStoveModSettings_Smithy_label>Smithy:</PyrinthStoveModSettings_Smithy_label>
+
+    <PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy>Consumes Pyrinth fuel</PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy>
+
+    <PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy_tooltip>When turned on, smithy continually consumes fuel in order to work. When turned off, smithy works without fuel. Default is ON.</PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy_tooltip>
+
+    <PyrinthStoveModSettings_TurnedOff_Inspect>(Fuel consumption turned off)</PyrinthStoveModSettings_TurnedOff_Inspect>
 
 </LanguageData>

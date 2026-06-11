@@ -51,8 +51,10 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CompProperties_Refuelable_Configurable.cs" />
-        <Compile Include="CompRefuelableConfigurable.cs" />
+        <Compile Include="CompProperties_Refuelable_ConfigurableSmithy.cs" />
+        <Compile Include="CompProperties_Refuelable_ConfigurableStove.cs" />
+        <Compile Include="CompRefuelableConfigurableSmithy.cs" />
+        <Compile Include="CompRefuelableConfigurableStove.cs" />
         <Compile Include="PyrinthStoveModSettings.cs" />
         <Compile Include="PyrinthStoveMod.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>

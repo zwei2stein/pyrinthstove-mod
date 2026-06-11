@@ -3,9 +3,9 @@ using Verse;
 
 namespace PyrinthStove
 {
-    public class CompRefuelableConfigurable : CompRefuelable
+    public class CompRefuelableConfigurableStove : CompRefuelable
     {
-        public new CompProperties_Refuelable_Configurable Props => (CompProperties_Refuelable_Configurable) this.props;
+        public new CompProperties_Refuelable_ConfigurableStove Props => (CompProperties_Refuelable_ConfigurableStove) this.props;
         
         public override void CompTick()
         {
@@ -18,7 +18,7 @@ namespace PyrinthStove
         {
             var inspect = base.CompInspectStringExtra();
             if (!PyrinthStoveModSettings.fuelConsumptionForStove)
-                inspect = (string) (inspect + ("\n" + "PyrinthStoveModSettings_Stove_TurnedOff_Inspect".Translate()));
+                inspect = (string) (inspect + ("\n" + "PyrinthStoveModSettings_TurnedOff_Inspect".Translate()));
             return inspect;
         }
         

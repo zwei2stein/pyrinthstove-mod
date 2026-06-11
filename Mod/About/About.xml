@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Pyrinth Stove</name>
+    <name>Pyrinth Stove &amp; Smithy</name>
     <author>zwei2stein</author>
     <packageId>zwei2stein.PyrinthStove</packageId>
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-    <modVersion>1.1</modVersion>
-    <description>Pyrinth powered cooking stove.</description>
+    <modVersion>1.2</modVersion>
+    <description>Pyrinth powered cooking stove and smithy.</description>
   <modDependencies>
     <li>
       <packageId>det.epochspyrinth</packageId>

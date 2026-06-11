@@ -9,7 +9,9 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=374
 
 ![](/Publishing/01_basics.png)
 
-![](/Publishing/02_config.png)
+![](/Publishing/02_smithy.png)
+
+![](/Publishing/03_config.png)
 
 ## License
 

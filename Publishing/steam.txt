@@ -1,4 +1,4 @@
-[h1]Pyrinth Stove[/h1]
+[h1]Pyrinth Stove & Smithy[/h1]
 
 Addon to Epochs - Pyrinth 
 
@@ -6,16 +6,21 @@ Addon to Epochs - Pyrinth
 
 [list]
     [*]Pyrinth Stove, a pyrinth-powered cooking stove. To cook food.
+    [*]Pyrinth Smithy, a pyrinth-powered cooking smithy. To blacksmith stuff.
 [/list]
 
-That is it. Research pyrinth temperature regulation and built it. It requires fuel in form of pyrinth, but fairly rarely. You can turn fuel consumption off in settings.
+That is it. Research pyrinth temperature regulation and built it.
+
+They require fuel in form of pyrinth, but fairly rarely. You can turn fuel consumption off in mod settings.
 
 [hr][/hr]
 
 [h2]Mod compatibility[/h2]
 
+Recipes from mods should be included by default.
+
 [list]
-    [*]More Linkables
+    [*]More Linkables - support for linkables from this mod.
 [/list]
 
 [hr][/hr]
