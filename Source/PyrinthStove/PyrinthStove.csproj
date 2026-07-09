@@ -51,8 +51,14 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="CompProperties_Refuelable_ConfigurableBoiler.cs" />
+        <Compile Include="CompProperties_Refuelable_ConfigurableCrematorium.cs" />
+        <Compile Include="CompProperties_Refuelable_ConfigurableSmelter.cs" />
         <Compile Include="CompProperties_Refuelable_ConfigurableSmithy.cs" />
         <Compile Include="CompProperties_Refuelable_ConfigurableStove.cs" />
+        <Compile Include="CompRefuelableConfigurableBoiler.cs" />
+        <Compile Include="CompRefuelableConfigurableCrematorium.cs" />
+        <Compile Include="CompRefuelableConfigurableSmelter.cs" />
         <Compile Include="CompRefuelableConfigurableSmithy.cs" />
         <Compile Include="CompRefuelableConfigurableStove.cs" />
         <Compile Include="PyrinthStoveModSettings.cs" />

@@ -1,36 +1,38 @@
 [h1]Pyrinth Stove & Smithy[/h1]
 
-Addon to Epochs - Pyrinth 
+Add-on to Epochs - Pyrinth
 
-[h2]Features[/h2] 
+[h2]Features[/h2]
 
 [list]
-    [*]Pyrinth Stove, a pyrinth-powered cooking stove. To cook food.
-    [*]Pyrinth Smithy, a pyrinth-powered cooking smithy. To blacksmith stuff.
+    [*]Pyrinth Stove, a pyrinth-powered stove for cooking food.
+    [*]Pyrinth Smithy, a pyrinth-powered smithy for blacksmithing.
+    [*]Pyrinth Smelter, a pyrinth-powered smelter.
+    [*]Pyrinth Crematorium, a pyrinth-powered crematorium.
 [/list]
 
-That is it. Research pyrinth temperature regulation and built it.
+That's all. Research pyrinth temperature regulation (or pyrinth unleashing) and build them.
 
-They require fuel in form of pyrinth, but fairly rarely. You can turn fuel consumption off in mod settings.
+They require fuel in the form of pyrinth, but fairly rarely. You can turn fuel consumption off in mod settings.
 
 [hr][/hr]
 
-[h2]Mod compatibility[/h2]
+[h2]Mod Compatibility[/h2]
 
-Recipes from mods should be included by default.
+Recipes from mods are included by default.
 
 [list]
     [*]More Linkables - support for linkables from this mod.
+    [*]Dubs Bad Hygiene - pyrinth-powered boiler for water heating.
 [/list]
 
 [hr][/hr]
 
-[url=https://github.com/zwei2stein/pyrinthstove-mod/] source code [/url] 
-
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3651274426] my other mods [/url] 
+[url=https://github.com/zwei2stein/pyrinthstove-mod/]Source Code[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3651274426]My Other Mods[/url]
 
 [hr][/hr]
 
 [h2]Thanks[/h2]
 
-A lot of thanks to rimworld modding discord for help.
+Many thanks to the RimWorld Modding Discord for their help.

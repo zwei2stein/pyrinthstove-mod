@@ -29,4 +29,18 @@
       </value>     
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs/WorkGiverDef/fixedBillGiverDefs[li = 'ElectricCrematorium']</xpath>
+      <value>
+        <li>PyrinthStove_PyrinthCrematorium</li>
+      </value>     
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs/WorkGiverDef/fixedBillGiverDefs[li = 'ElectricSmelter']</xpath>
+      <value>
+        <li>PyrinthStove_PyrinthSmelter</li>
+      </value>     
+    </Operation>
+
 </Patch>

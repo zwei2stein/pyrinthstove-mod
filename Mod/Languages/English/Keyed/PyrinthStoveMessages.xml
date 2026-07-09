@@ -4,17 +4,25 @@
     <PyrinthStoveModName>Pyrinth Stove &amp; Smithy</PyrinthStoveModName>
 
     <PyrinthStoveModSettings_Stove_label>Stove:</PyrinthStoveModSettings_Stove_label>
-
     <PyrinthStoveModSettings_Stove_fuelConsumptionForStove>Consumes Pyrinth fuel</PyrinthStoveModSettings_Stove_fuelConsumptionForStove>
-
     <PyrinthStoveModSettings_Stove_fuelConsumptionForStove_tooltip>When turned on, stove continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Stove_fuelConsumptionForStove_tooltip>
 
     <PyrinthStoveModSettings_Smithy_label>Smithy:</PyrinthStoveModSettings_Smithy_label>
-
     <PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy>Consumes Pyrinth fuel</PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy>
-
     <PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy_tooltip>When turned on, smithy continually consumes fuel in order to work. When turned off, smithy works without fuel. Default is ON.</PyrinthStoveModSettings_Smithy_fuelConsumptionForSmithy_tooltip>
 
-    <PyrinthStoveModSettings_TurnedOff_Inspect>(Fuel consumption turned off)</PyrinthStoveModSettings_TurnedOff_Inspect>
+    <PyrinthStoveModSettings_Smelter_label>Smelter:</PyrinthStoveModSettings_Smelter_label>
+    <PyrinthStoveModSettings_Smelter_fuelConsumptionForSmelter>Consumes Pyrinth fuel</PyrinthStoveModSettings_Smelter_fuelConsumptionForSmelter>
+    <PyrinthStoveModSettings_Smelter_fuelConsumptionForSmelter_tooltip>When turned on, smelter continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Smelter_fuelConsumptionForSmelter_tooltip>
+    
+    <PyrinthStoveModSettings_Crematorium_label>Crematorium:</PyrinthStoveModSettings_Crematorium_label>
+    <PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium>Consumes Pyrinth fuel</PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium>
+    <PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium_tooltip>When turned on, crematorium continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium_tooltip>
 
+    <PyrinthStoveModSettings_Boiler_label>Boiler:</PyrinthStoveModSettings_Boiler_label>
+    <PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler>Consumes Pyrinth fuel</PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler>
+    <PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler_tooltip>When turned on, boiler continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler_tooltip>
+
+    <PyrinthStoveModSettings_TurnedOff_Inspect>(Fuel consumption turned off)</PyrinthStoveModSettings_TurnedOff_Inspect>
+    
 </LanguageData>

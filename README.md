@@ -11,7 +11,11 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=374
 
 ![](/Publishing/02_smithy.png)
 
-![](/Publishing/03_config.png)
+![](/Publishing/03_smelter_crematorium.png)
+
+![](/Publishing/04_boiler.png)
+
+![](/Publishing/05_config.png)
 
 ## License
 

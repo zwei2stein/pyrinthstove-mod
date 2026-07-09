@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BasedHeating" DBHLite="true" MayRequire="Dubwise.DubsBadHygiene">
+        <defName>PyrinthStove_PyrinthBoiler</defName>
+        <label>pyrinth boiler</label>
+        <description>Produces 2000 heating units for piped radiators and hot water tanks. Heats the room and adjacent baths. Uses pyrinth crystals for fuel.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/PyrinthStove_PyrinthBoiler</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <rect>(0.05,0.05,0.95,0.95)</rect>
+            </damageData>
+        </graphicData>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>false</castEdgeShadows>
+        <pathCost>150</pathCost>
+        <size>(1,1)</size>
+        <costList>
+            <Steel>200</Steel>
+            <DV_Pyrinth>90</DV_Pyrinth>
+        </costList>
+        <rotatable>true</rotatable>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>1000</WorkToBuild>
+            <Mass>50</Mass>
+        </statBases>
+        <comps>
+            <li Class="DubsBadHygiene.CompProperties_Pipe">
+                <mode>Sewage</mode>
+            </li>
+            <li Class="DubsBadHygiene.CompProperties_CompBoiler">
+                <BaseCapacity>2000</BaseCapacity>
+                <ThermostatControl>false</ThermostatControl>
+                <!--
+                <effects>
+                    <texPath>DBH/Things/Building/Heating/LogBoilerEffects</texPath>
+                    <graphicClass>DubsBadHygiene.Graphic_FX</graphicClass>
+                    <shaderType>MoteGlow</shaderType>
+                    <drawSize>(2,2)</drawSize>
+                </effects>-->
+            </li>
+            <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableBoiler">
+                <fuelConsumptionRate>0.05</fuelConsumptionRate>
+                <!-- 1.5 pyrinth per quadrum -->
+                <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
+                <fuelCapacity>10.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>DV_Pyrinth</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <canEjectFuel>true</canEjectFuel>
+            </li>
+            <li Class="CompProperties_Effecter">
+                <effecterDef>DV_PyrinthSparkingEffect</effecterDef>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(192,117,77,0)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>12</heatPerSecond>
+            </li>      
+        </comps>
+        <researchPrerequisites>
+            <li MayRequire="dbhlitemode">LogBoilers</li>
+            <li>PyrinthStove_PyrinthUnleashingResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+    
+</Defs>

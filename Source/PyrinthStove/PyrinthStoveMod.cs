@@ -57,6 +57,36 @@ namespace PyrinthStove
             listingStandard.Outdent(gapWidth);
             listingStandard.ColumnWidth += gapWidth;
             
+            listingStandard.GapLine();
+            
+            listingStandard.Label("PyrinthStoveModSettings_Smelter_label".Translate());
+
+            listingStandard.Indent(gapWidth);
+            listingStandard.ColumnWidth -= gapWidth;
+            
+            listingStandard.CheckboxLabeled(
+                "PyrinthStoveModSettings_Smelter_fuelConsumptionForSmelter".Translate(),
+                ref PyrinthStoveModSettings.fuelConsumptionForSmelter,
+                "PyrinthStoveModSettings_Smelter_fuelConsumptionForSmelter_tooltip".Translate());
+            
+            listingStandard.Outdent(gapWidth);
+            listingStandard.ColumnWidth += gapWidth;
+            
+            listingStandard.GapLine();
+            
+            listingStandard.Label("PyrinthStoveModSettings_Boiler_label".Translate());
+
+            listingStandard.Indent(gapWidth);
+            listingStandard.ColumnWidth -= gapWidth;
+            
+            listingStandard.CheckboxLabeled(
+                "PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler".Translate(),
+                ref PyrinthStoveModSettings.fuelConsumptionForBoiler,
+                "PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler_tooltip".Translate());
+            
+            listingStandard.Outdent(gapWidth);
+            listingStandard.ColumnWidth += gapWidth;
+            
             listingStandard.GapLine();            
             
             listingStandard.End();
