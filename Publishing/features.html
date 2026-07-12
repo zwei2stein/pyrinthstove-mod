@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyrinth Stove & Smithy - Features</title>
+    <style>
+        :root {
+            --rimworld-bg-dark: #1b2838;
+            --rimworld-bg-darker: #111827;
+            --rimworld-bg-panel: #243447;
+            --rimworld-bg-panel-light: #2a3e50;
+            --rimworld-text: #d4d4d4;
+            --rimworld-text-muted: #9a9a9a;
+            --rimworld-text-bright: #ffffff;
+            --rimworld-accent-gold: #c0774d;
+            --rimworld-accent-blue: #4a90d9;
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--rimworld-bg-darker);
+            color: var(--rimworld-text);
+            line-height: 1.6;
+            padding: var(--spacing-lg);
+        }
+
+        .feature-table {
+            width: 950px;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: var(--rimworld-bg-panel);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .feature-table tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .feature-table tr:last-child { border-bottom: none; }
+        .feature-table tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+
+        .feature-table th {
+            padding: var(--spacing-md) var(--spacing-lg);
+            text-align: left;
+            font-size: 0.9em;
+            color: var(--rimworld-accent-gold);
+            font-weight: 600;
+            background: rgba(0,0,0,0.2);
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .cell-graphic {
+            width: 140px;
+            padding: var(--spacing-md);
+            text-align: center;
+            vertical-align: middle;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .cell-graphic img {
+            max-width: 120px;
+            max-height: 120px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 8px rgba(0,0,0,0.5));
+        }
+
+        .cell-description {
+            padding: var(--spacing-md) var(--spacing-lg);
+            vertical-align: middle;
+            width: 40%;
+        }
+
+        .cell-description h3 {
+            font-size: 1.1em;
+            color: var(--rimworld-text-bright);
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+        }
+
+        .cell-description p {
+            font-size: 0.9em;
+            color: var(--rimworld-text-muted);
+            line-height: 1.5;
+        }
+
+        .cell-cost {
+            width: 25%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            vertical-align: middle;
+        }
+
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cost-table td {
+            padding: 2px 4px;
+            text-align: center;
+            font-size: 0.85em;
+        }
+
+        .cost-table .amount {
+            color: var(--rimworld-text-bright);
+            font-weight: 600;
+            width: 25%;
+        }
+
+        .cost-table .material {
+            color: var(--rimworld-text);
+            text-align: left;
+            width: 50%;
+        }
+
+        .cost-table .icon {
+            width: 25%;
+        }
+
+        .icon-steel { width: 16px; height: 16px; background: linear-gradient(135deg, #a8a8a8, #d4d4d4); border-radius: 2px; display: inline-block; }
+        .icon-pyrinth { width: 16px; height: 16px; background: linear-gradient(135deg, #c0774d, #d4772d); border-radius: 2px; display: inline-block; }
+        .icon-stone { width: 16px; height: 16px; background: linear-gradient(135deg, #5a5a5a, #8a8a8a); border-radius: 2px; display: inline-block; }
+
+        .cost-skill {
+            margin-top: var(--spacing-xs);
+            font-size: 0.85em;
+            color: var(--rimworld-text-muted);
+            font-style: italic;
+        }
+
+        .cell-stats {
+            width: 25%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            vertical-align: middle;
+        }
+
+        .stats-list {
+            list-style: none;
+            font-size: 0.85em;
+        }
+
+        .stats-list li {
+            padding: var(--spacing-xs) 0;
+            position: relative;
+            padding-left: var(--spacing-md);
+            color: var(--rimworld-text-muted);
+        }
+
+        .stats-list li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: var(--rimworld-accent-gold);
+            font-size: 0.8em;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            margin: 2px 0;
+            border-radius: var(--radius-sm);
+            font-size: 0.75em;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-research {
+            background: rgba(208, 119, 45, 0.15);
+            border: 1px solid var(--rimworld-accent-gold);
+            color: var(--rimworld-accent-gold);
+        }
+
+        .tag-dlc {
+            background: rgba(74, 144, 217, 0.2);
+            border: 1px solid var(--rimworld-accent-blue);
+            color: var(--rimworld-accent-blue);
+        }
+    </style>
+</head>
+<body>
+<table class="feature-table">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Cost</th>
+        <th>Features & Stats</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- PYRINTH STOVE -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthStove_north.png" alt="Pyrinth Stove">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Stove</h3>
+            <p>A <strong>pyrinth-powered</strong> stove with an attached countertop for preparing meals. All standard cooking recipes are supported, including bulk cooking and baby food.</p>
+            <div><span class="tag tag-research">Requires: Pyrinth Temperature Regulation</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">80</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+            </table>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Heats room</strong> (+4 C/s)</li>
+                <li>Work table: <strong>Kitchen</strong></li>
+                <li>Fuel lasts: <strong>~3.3 quadrums</strong></li>
+                <li>Glow radius: 10 cells</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- PYRINTH SMITHY -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthSmithy_north.png" alt="Pyrinth Smithy">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Smithy</h3>
+            <p>A <strong>pyrinth-powered</strong> station for smithing non-mechanical weapons and tools. Supports all standard smithing recipes and <strong>links with Tool Cabinets</strong>.</p>
+            <div><span class="tag tag-research">Requires: Smithing + Pyrinth Temperature Regulation</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">100</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+            </table>
+            <div class="cost-skill">Construction Skill: 4</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Heats room</strong> (+4 C/s)</li>
+                <li>Work table: <strong>Workshop</strong></li>
+                <li>Cleanliness: -3</li>
+                <li>Fuel lasts: <strong>~3.3 quadrums</strong></li>
+                <li>Glow radius: 10 cells</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- PYRINTH SMELTER -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthSmelter_north.png" alt="Pyrinth Smelter">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Smelter</h3>
+            <p>Extracts <strong>usable metal</strong> from slag chunks and other mixed metal items. Can smelt down weapons, apparel, and other metal objects to recover resources.</p>
+            <div><span class="tag tag-research">Requires: Pyrinth Unleashing</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">200</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+            </table>
+            <div class="cost-skill">Construction Skill: 4</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Heats room</strong> (+12 C/s)</li>
+                <li>Work table: <strong>Workshop</strong></li>
+                <li>Fuel lasts: <strong>~1.7 quadrums</strong></li>
+                <li>Glow radius: 10 cells</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- PYRINTH CREMATORIUM -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthCrematorium_north.png" alt="Pyrinth Crematorium">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Crematorium</h3>
+            <p>A huge stone crematorium which <strong>vaporizes corpses</strong> with extremely high temperatures from pyrinth. Can also burn apparel, weapons, and drugs.</p>
+            <div><span class="tag tag-research">Requires: Pyrinth Unleashing</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">50</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+                <tr><td class="amount">150</td><td class="material">Stone</td><td class="icon"><span class="icon-stone"></span></td></tr>
+            </table>
+            <div class="cost-skill">Construction Skill: 4</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Heats room</strong> (+12 C/s)</li>
+                <li>Beauty: -10</li>
+                <li>Cleanliness: -20</li>
+                <li>Fuel lasts: <strong>~1.7 quadrums</strong></li>
+                <li>Glow radius: 10 cells</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- PYRINTH BOILER -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthBoiler_north.png" alt="Pyrinth Boiler">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Boiler</h3>
+            <p>Produces <strong>2000 heating units</strong> for piped radiators and hot water tanks. Heats the room and adjacent baths. Requires <strong>Dubs Bad Hygiene</strong> mod.</p>
+            <div><span class="tag tag-research">Requires: Log Boilers + Pyrinth Unleashing</span></div>
+            <div><span class="tag tag-dlc">Dubs Bad Hygiene</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">200</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+            </table>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li>Heat capacity: <strong>2000</strong></li>
+                <li><strong>Heats room</strong> (+12 C/s)</li>
+                <li>Fuel lasts: <strong>~6.7 quadrums</strong></li>
+                <li>Glow radius: 10 cells</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

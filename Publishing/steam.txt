@@ -2,6 +2,8 @@
 
 Add-on to Epochs - Pyrinth
 
+[img=https://i.imgur.com/XR8Qrfj.png]
+
 [h2]Features[/h2]
 
 [list]
