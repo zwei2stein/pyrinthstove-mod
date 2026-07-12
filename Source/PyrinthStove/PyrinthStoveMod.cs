@@ -74,6 +74,21 @@ namespace PyrinthStove
             
             listingStandard.GapLine();
             
+            listingStandard.Label("PyrinthStoveModSettings_Crematorium_label".Translate());
+
+            listingStandard.Indent(gapWidth);
+            listingStandard.ColumnWidth -= gapWidth;
+            
+            listingStandard.CheckboxLabeled(
+                "PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium".Translate(),
+                ref PyrinthStoveModSettings.fuelConsumptionForCrematorium,
+                "PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium_tooltip".Translate());            
+            
+            listingStandard.Outdent(gapWidth);
+            listingStandard.ColumnWidth += gapWidth;
+            
+            listingStandard.GapLine();
+            
             listingStandard.Label("PyrinthStoveModSettings_Boiler_label".Translate());
 
             listingStandard.Indent(gapWidth);

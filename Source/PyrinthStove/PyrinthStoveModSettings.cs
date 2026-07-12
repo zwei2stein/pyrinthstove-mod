@@ -16,6 +16,7 @@ namespace PyrinthStove
             Scribe_Values.Look<bool>(ref fuelConsumptionForSmithy, "fuelConsumptionForSmithy", true);
             Scribe_Values.Look<bool>(ref fuelConsumptionForSmelter, "fuelConsumptionForSmelter", true);
             Scribe_Values.Look<bool>(ref fuelConsumptionForCrematorium, "fuelConsumptionForCrematorium", true);
+            Scribe_Values.Look<bool>(ref fuelConsumptionForBoiler, "fuelConsumptionForBoiler", true);
             
             base.ExposeData();
         }
