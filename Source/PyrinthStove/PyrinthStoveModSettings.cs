@@ -4,11 +4,13 @@ namespace PyrinthStove
 {
     public class PyrinthStoveModSettings : ModSettings
     {
-        public static bool fuelConsumptionForBoiler = true;
         public static bool fuelConsumptionForStove = true;
         public static bool fuelConsumptionForSmithy = true;
         public static bool fuelConsumptionForSmelter = true;
         public static bool fuelConsumptionForCrematorium = true;
+
+        public static bool fuelConsumptionForBoiler = true;
+        public static bool fuelConsumptionForSauna = true;
 
         public override void ExposeData()
         {
@@ -16,7 +18,9 @@ namespace PyrinthStove
             Scribe_Values.Look<bool>(ref fuelConsumptionForSmithy, "fuelConsumptionForSmithy", true);
             Scribe_Values.Look<bool>(ref fuelConsumptionForSmelter, "fuelConsumptionForSmelter", true);
             Scribe_Values.Look<bool>(ref fuelConsumptionForCrematorium, "fuelConsumptionForCrematorium", true);
+            
             Scribe_Values.Look<bool>(ref fuelConsumptionForBoiler, "fuelConsumptionForBoiler", true);
+            Scribe_Values.Look<bool>(ref fuelConsumptionForSauna, "fuelConsumptionForSauna", true);
             
             base.ExposeData();
         }

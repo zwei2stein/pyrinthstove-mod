@@ -39,8 +39,9 @@
             background: var(--rimworld-bg-panel);
             border-radius: var(--radius-md);
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
             border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 1em;
+            margin-top: 1em;
         }
 
         .feature-table tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
@@ -124,9 +125,11 @@
             width: 25%;
         }
 
-        .icon-steel { width: 16px; height: 16px; background: linear-gradient(135deg, #a8a8a8, #d4d4d4); border-radius: 2px; display: inline-block; }
-        .icon-pyrinth { width: 16px; height: 16px; background: linear-gradient(135deg, #c0774d, #d4772d); border-radius: 2px; display: inline-block; }
-        .icon-stone { width: 16px; height: 16px; background: linear-gradient(135deg, #5a5a5a, #8a8a8a); border-radius: 2px; display: inline-block; }
+        .icon-steel { display: inline-block; }
+        .icon-stone { display: inline-block; }
+        .cost-table .icon img { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; }
+        .icon-pyrinth-img { display: inline-block; }
+        .icon-pyrinth-img img { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; }
 
         .cost-skill {
             margin-top: var(--spacing-xs);
@@ -199,24 +202,25 @@
     <!-- PYRINTH STOVE -->
     <tr>
         <td class="cell-graphic">
-            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthStove_north.png" alt="Pyrinth Stove">
+            <img src="../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthStove_north.png" alt="Pyrinth Stove">
         </td>
         <td class="cell-description">
             <h3>Pyrinth Stove</h3>
-            <p>A <strong>pyrinth-powered</strong> stove with an attached countertop for preparing meals. All standard cooking recipes are supported, including bulk cooking and baby food.</p>
+            <p>A <strong>pyrinth powered</strong> stove with an attached countertop for preparing meals.</p>
             <div><span class="tag tag-research">Requires: Pyrinth Temperature Regulation</span></div>
         </td>
         <td class="cell-cost">
             <table class="cost-table">
-                <tr><td class="amount">80</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
-                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+                <tr><td class="amount">80</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"><img src="textures/Steel_c.png" alt="Steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth-img"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></span></td></tr>
             </table>
         </td>
         <td class="cell-stats">
             <ul class="stats-list">
                 <li><strong>Heats room</strong> (+4 C/s)</li>
                 <li>Work table: <strong>Kitchen</strong></li>
-                <li>Fuel lasts: <strong>~3.3 quadrums</strong></li>
+                <li>Fuel: <strong>3 pyrinth/quadrum</strong></li>
+                <li>Fuel capacity: 10</li>
                 <li>Glow radius: 10 cells</li>
             </ul>
         </td>
@@ -225,17 +229,17 @@
     <!-- PYRINTH SMITHY -->
     <tr>
         <td class="cell-graphic">
-            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthSmithy_north.png" alt="Pyrinth Smithy">
+            <img src="../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthSmithy_north.png" alt="Pyrinth Smithy">
         </td>
         <td class="cell-description">
             <h3>Pyrinth Smithy</h3>
-            <p>A <strong>pyrinth-powered</strong> station for smithing non-mechanical weapons and tools. Supports all standard smithing recipes and <strong>links with Tool Cabinets</strong>.</p>
+            <p>A <strong>pyrinth powered</strong> station for smithing non-mechanical weapons and tools. Supports all standard smithing recipes and <strong>links with Tool Cabinets</strong>.</p>
             <div><span class="tag tag-research">Requires: Smithing + Pyrinth Temperature Regulation</span></div>
         </td>
         <td class="cell-cost">
             <table class="cost-table">
-                <tr><td class="amount">100</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
-                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+                <tr><td class="amount">100</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"><img src="textures/Steel_c.png" alt="Steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth-img"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></span></td></tr>
             </table>
             <div class="cost-skill">Construction Skill: 4</div>
         </td>
@@ -244,7 +248,8 @@
                 <li><strong>Heats room</strong> (+4 C/s)</li>
                 <li>Work table: <strong>Workshop</strong></li>
                 <li>Cleanliness: -3</li>
-                <li>Fuel lasts: <strong>~3.3 quadrums</strong></li>
+                <li>Fuel: <strong>3 pyrinth/quadrum</strong></li>
+                <li>Fuel capacity: 10</li>
                 <li>Glow radius: 10 cells</li>
             </ul>
         </td>
@@ -253,17 +258,17 @@
     <!-- PYRINTH SMELTER -->
     <tr>
         <td class="cell-graphic">
-            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthSmelter_north.png" alt="Pyrinth Smelter">
+            <img src="../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthSmelter_north.png" alt="Pyrinth Smelter">
         </td>
         <td class="cell-description">
             <h3>Pyrinth Smelter</h3>
-            <p>Extracts <strong>usable metal</strong> from slag chunks and other mixed metal items. Can smelt down weapons, apparel, and other metal objects to recover resources.</p>
+            <p>Extracts <strong>usable metal</strong> from slag chunks and other mixed metal items. Powered by pyrinth crystals.</p>
             <div><span class="tag tag-research">Requires: Pyrinth Unleashing</span></div>
         </td>
         <td class="cell-cost">
             <table class="cost-table">
-                <tr><td class="amount">200</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
-                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+                <tr><td class="amount">200</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"><img src="textures/Steel_c.png" alt="Steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth-img"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></span></td></tr>
             </table>
             <div class="cost-skill">Construction Skill: 4</div>
         </td>
@@ -271,7 +276,8 @@
             <ul class="stats-list">
                 <li><strong>Heats room</strong> (+12 C/s)</li>
                 <li>Work table: <strong>Workshop</strong></li>
-                <li>Fuel lasts: <strong>~1.7 quadrums</strong></li>
+                <li>Fuel: <strong>6 pyrinth/quadrum</strong></li>
+                <li>Fuel capacity: 10</li>
                 <li>Glow radius: 10 cells</li>
             </ul>
         </td>
@@ -280,7 +286,7 @@
     <!-- PYRINTH CREMATORIUM -->
     <tr>
         <td class="cell-graphic">
-            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthCrematorium_north.png" alt="Pyrinth Crematorium">
+            <img src="../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthCrematorium_north.png" alt="Pyrinth Crematorium">
         </td>
         <td class="cell-description">
             <h3>Pyrinth Crematorium</h3>
@@ -289,9 +295,9 @@
         </td>
         <td class="cell-cost">
             <table class="cost-table">
-                <tr><td class="amount">50</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
-                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
-                <tr><td class="amount">150</td><td class="material">Stone</td><td class="icon"><span class="icon-stone"></span></td></tr>
+                <tr><td class="amount">50</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"><img src="textures/Steel_c.png" alt="Steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth-img"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></span></td></tr>
+                <tr><td class="amount">150</td><td class="material">Stone</td><td class="icon"><span class="icon-stone"><img src="textures/Basalt_blocks_C.png" alt="Stone Blocks"></span></span></td></tr>
             </table>
             <div class="cost-skill">Construction Skill: 4</div>
         </td>
@@ -300,38 +306,81 @@
                 <li><strong>Heats room</strong> (+12 C/s)</li>
                 <li>Beauty: -10</li>
                 <li>Cleanliness: -20</li>
-                <li>Fuel lasts: <strong>~1.7 quadrums</strong></li>
+                <li>Fuel: <strong>6 pyrinth/quadrum</strong></li>
+                <li>Fuel capacity: 10</li>
                 <li>Glow radius: 10 cells</li>
             </ul>
         </td>
     </tr>
 
+    </tbody>
+</table>
+<table class="feature-table">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Cost</th>
+        <th>Features & Stats</th>
+    </tr>
+    </thead>
+    <tbody>
+    
     <!-- PYRINTH BOILER -->
     <tr>
         <td class="cell-graphic">
-            <img src="../../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthBoiler_north.png" alt="Pyrinth Boiler">
+            <img src="../Mod/1.6/Textures/Things/Building/Production/PyrinthStove_PyrinthBoiler_north.png" alt="Pyrinth Boiler">
         </td>
         <td class="cell-description">
             <h3>Pyrinth Boiler</h3>
-            <p>Produces <strong>2000 heating units</strong> for piped radiators and hot water tanks. Heats the room and adjacent baths. Requires <strong>Dubs Bad Hygiene</strong> mod.</p>
+            <p>Produces <strong>2000 heating units</strong> for piped radiators and hot water tanks. Heats the room and connected baths. Uses pyrinth crystals for fuel. Requires <strong>Dubs Bad Hygiene</strong> mod.</p>
             <div><span class="tag tag-research">Requires: Log Boilers + Pyrinth Unleashing</span></div>
             <div><span class="tag tag-dlc">Dubs Bad Hygiene</span></div>
         </td>
         <td class="cell-cost">
             <table class="cost-table">
-                <tr><td class="amount">200</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"></span></td></tr>
-                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth"></span></td></tr>
+                <tr><td class="amount">200</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"><img src="textures/Steel_c.png" alt="Steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth-img"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></span></td></tr>
             </table>
         </td>
         <td class="cell-stats">
             <ul class="stats-list">
-                <li>Heat capacity: <strong>2000</strong></li>
                 <li><strong>Heats room</strong> (+12 C/s)</li>
-                <li>Fuel lasts: <strong>~6.7 quadrums</strong></li>
+                <li>Heat capacity: <strong>2000</strong></li>
+                <li>Fuel: <strong>1.5 pyrinth/quadrum</strong></li>
+                <li>Fuel capacity: 10</li>
                 <li>Glow radius: 10 cells</li>
             </ul>
         </td>
     </tr>
+
+    <tr>
+        <td class="cell-graphic">
+            <img src="textures/SaunaHeaterLog.png" alt="Pyrinth Sauna Heater">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Sauna Heater</h3>
+            <p>Enables <strong>sauna</strong> recreation and heats the room and adjacent baths. Uses pyrinth crystals for fuel. Requires <strong>Dubs Bad Hygiene</strong> mod.</p>
+            <div><span class="tag tag-research">Requires: Saunas + Pyrinth Unleashing</span></div>
+            <div><span class="tag tag-dlc">Dubs Bad Hygiene</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">50</td><td class="material">Steel</td><td class="icon"><span class="icon-steel"><img src="textures/Steel_c.png" alt="Steel"></span></td></tr>
+                <tr><td class="amount">90</td><td class="material">Pyrinth</td><td class="icon"><span class="icon-pyrinth-img"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></span></td></tr>
+                <tr><td class="amount">150</td><td class="material">Stone</td><td class="icon"><span class="icon-stone"><img src="textures/Basalt_blocks_C.png" alt="Stone Blocks"></span></span></td></tr>
+            </table>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Heats room</strong> up to 70C</li>
+                <li>Fuel: <strong>1.5 pyrinth/quadrum</strong></li>
+                <li>Fuel capacity: 10</li>
+                <li>Glow radius: 6 cells</li>
+            </ul>
+        </td>
+    </tr>
+    
     </tbody>
 </table>
 </body>

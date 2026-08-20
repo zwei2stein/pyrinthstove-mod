@@ -5,6 +5,16 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=374
 
 ## Quick about
 
+### Infographic
+
+[Infographics as separate page](/Publishing/features.html)
+
+![](/Publishing/infotable_01.png)
+
+![](/Publishing/infotable_02.png)
+
+### Steam mod page info
+
 [Steam blurb text is in this repo](/Publishing/steam.txt)
 
 ![](/Publishing/01_basics.png)
@@ -14,6 +24,8 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=374
 ![](/Publishing/03_smelter_crematorium.png)
 
 ![](/Publishing/04_boiler.png)
+
+![](/Publishing/05_sauna.png)
 
 ![](/Publishing/05_config.png)
 

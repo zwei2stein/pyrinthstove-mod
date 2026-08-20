@@ -73,5 +73,84 @@
             <li>PyrinthStove_PyrinthUnleashingResearch</li>
         </researchPrerequisites>
     </ThingDef>
+
+    <ThingDef ParentName="BasedHeating" MayRequire="Dubwise.DubsBadHygiene">
+        <designationCategory>Joy</designationCategory>
+        <defName>PyrinthStove_PyrinthSaunaHeater</defName>
+        <label>Pyrinth Sauna Heater</label>
+        <description>A pyrinth heater designed specifically for creating a sauna room, using a sauna regularly reduces the risk of heart attacks, heats a room to 60c.</description>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <costList>
+            <Steel>50</Steel>
+            <DV_Pyrinth>90</DV_Pyrinth>
+        </costList>
+        <graphicData>
+            <texPath>Things/Building/Heating/PyrinthStove_SaunaHeater</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <rect>(0.05,0.05,0.95,0.95)</rect>
+            </damageData>
+        </graphicData>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>false</castEdgeShadows>
+        <pathCost>150</pathCost>
+        <size>(1,1)</size>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>1000</WorkToBuild>
+            <Mass>50</Mass>
+            <JoyGainFactor>1.4</JoyGainFactor>
+        </statBases>
+        <comps>
+            <li>
+                <compClass>DubsBadHygiene.CompGenderRestrict</compClass>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(192,117,77,0)</glowColor>
+            </li>
+            <li Class="DubsBadHygiene.CompProperties_SaunaHeater">
+                <compClass>DubsBadHygiene.Comp_SaunaHeater</compClass>
+                <!--
+                <effects>
+                    <texPath>Things/Building/Heating/PyrinthSaunaEffects</texPath>
+                    <graphicClass>DubsBadHygiene.Graphic_FX</graphicClass>
+                    <shaderType>MoteGlow</shaderType>
+                    <drawSize>(2,2)</drawSize>
+                </effects>
+                -->
+                <heatPerSecond>34</heatPerSecond>
+                <heatPushMaxTemperature>70</heatPushMaxTemperature>
+            </li>
+            <li Class="CompProperties_Effecter">
+                <effecterDef>DV_PyrinthSparkingEffect</effecterDef>
+            </li>
+            <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableSauna">
+                <fuelConsumptionRate>0.05</fuelConsumptionRate>
+                <!-- 1.5 pyrinth per quadrum -->
+                <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
+                <fuelCapacity>10.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>DV_Pyrinth</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <canEjectFuel>true</canEjectFuel>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li MayRequire="dbhlitemode">Saunas</li>
+            <li>PyrinthStove_PyrinthTemperatureRegulationResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
     
 </Defs>

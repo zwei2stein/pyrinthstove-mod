@@ -19,9 +19,16 @@
     <PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium>Consumes Pyrinth fuel</PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium>
     <PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium_tooltip>When turned on, crematorium continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Crematorium_fuelConsumptionForCrematorium_tooltip>
 
+    <DBH_Compat_Config_Section>Dub Bad Hygiene buildings:</DBH_Compat_Config_Section>
+    
     <PyrinthStoveModSettings_Boiler_label>Boiler:</PyrinthStoveModSettings_Boiler_label>
     <PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler>Consumes Pyrinth fuel</PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler>
     <PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler_tooltip>When turned on, boiler continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler_tooltip>
+
+    <PyrinthStoveModSettings_Sauna_label>Sauna:</PyrinthStoveModSettings_Sauna_label>
+    <PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna>Consumes Pyrinth fuel</PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna>
+    <PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna_tooltip>When turned on, boiler continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna_tooltip>
+
 
     <PyrinthStoveModSettings_TurnedOff_Inspect>(Fuel consumption turned off)</PyrinthStoveModSettings_TurnedOff_Inspect>
     

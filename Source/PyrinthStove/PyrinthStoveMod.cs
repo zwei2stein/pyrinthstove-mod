@@ -88,22 +88,52 @@ namespace PyrinthStove
             listingStandard.ColumnWidth += gapWidth;
             
             listingStandard.GapLine();
-            
-            listingStandard.Label("PyrinthStoveModSettings_Boiler_label".Translate());
 
-            listingStandard.Indent(gapWidth);
-            listingStandard.ColumnWidth -= gapWidth;
+            if (ModsConfig.IsActive("Dubwise.DubsBadHygiene"))
+            {
+
+                listingStandard.Label("DBH_Compat_Config_Section".Translate());
+
+                listingStandard.GapLine();
+                
+                listingStandard.Indent(gapWidth);
+                listingStandard.ColumnWidth -= gapWidth;
+                
+                listingStandard.Label("PyrinthStoveModSettings_Boiler_label".Translate());
+
+                listingStandard.Indent(gapWidth);
+                listingStandard.ColumnWidth -= gapWidth;
             
-            listingStandard.CheckboxLabeled(
-                "PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler".Translate(),
-                ref PyrinthStoveModSettings.fuelConsumptionForBoiler,
-                "PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler_tooltip".Translate());
+                listingStandard.CheckboxLabeled(
+                    "PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler".Translate(),
+                    ref PyrinthStoveModSettings.fuelConsumptionForBoiler,
+                    "PyrinthStoveModSettings_Boiler_fuelConsumptionForBoiler_tooltip".Translate());
             
-            listingStandard.Outdent(gapWidth);
-            listingStandard.ColumnWidth += gapWidth;
+                listingStandard.Outdent(gapWidth);
+                listingStandard.ColumnWidth += gapWidth;
             
-            listingStandard.GapLine();            
-            
+                listingStandard.GapLine();
+
+                listingStandard.Label("PyrinthStoveModSettings_Sauna_label".Translate());
+
+                listingStandard.Indent(gapWidth);
+                listingStandard.ColumnWidth -= gapWidth;
+
+                listingStandard.CheckboxLabeled(
+                    "PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna".Translate(),
+                    ref PyrinthStoveModSettings.fuelConsumptionForSauna,
+                    "PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna_tooltip".Translate());
+
+                listingStandard.Outdent(gapWidth);
+                listingStandard.ColumnWidth += gapWidth;
+
+                listingStandard.GapLine();
+                
+                listingStandard.Outdent(gapWidth);
+                listingStandard.ColumnWidth += gapWidth;
+
+            }
+
             listingStandard.End();
             
             base.DoSettingsWindowContents(inRect);

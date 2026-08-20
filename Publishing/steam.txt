@@ -1,8 +1,6 @@
 [h1]Pyrinth Stove & Smithy[/h1]
 
-Add-on to Epochs - Pyrinth
-
-[img=https://i.imgur.com/XR8Qrfj.png]
+Add-on to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3336544632]Epochs - Pyrinth[/url], more advanced buildings using Pyrinth heat.
 
 [h2]Features[/h2]
 
@@ -12,6 +10,17 @@ Add-on to Epochs - Pyrinth
     [*]Pyrinth Smelter, a pyrinth-powered smelter.
     [*]Pyrinth Crematorium, a pyrinth-powered crematorium.
 [/list]
+
+[img=https://i.imgur.com/2KckGvX.png]
+
+[h3]With Dubs Bad Hygiene[/h3]
+
+[list]
+    [*]Pyrinth Boiler, a pyrinth-powered boiler for hot water.
+    [*]Pyrinth Sauna Heater, a pyrinth-powered hearth of sauna.
+[/list]
+
+[img=https://i.imgur.com/sGUggAP.png]
 
 That's all. Research pyrinth temperature regulation (or pyrinth unleashing) and build them.
 
@@ -25,7 +34,7 @@ Recipes from mods are included by default.
 
 [list]
     [*]More Linkables - support for linkables from this mod.
-    [*]Dubs Bad Hygiene - pyrinth-powered boiler for water heating.
+    [*]Dubs Bad Hygiene - pyrinth-powered boiler for water heating and a sauna heater.
 [/list]
 
 [hr][/hr]
