@@ -30,6 +30,6 @@
     <PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna_tooltip>When turned on, boiler continually consumes fuel in order to work. When turned off, stove works without fuel. Default is ON.</PyrinthStoveModSettings_Sauna_fuelConsumptionForSauna_tooltip>
 
 
-    <PyrinthStoveModSettings_TurnedOff_Inspect>(Fuel consumption turned off)</PyrinthStoveModSettings_TurnedOff_Inspect>
+    <PyrinthStoveModSettings_TurnedOff_Inspect>(&lt;color=#C0754D&gt;Pyrinth fuel&lt;/color&gt; consumption turned off)</PyrinthStoveModSettings_TurnedOff_Inspect>
     
 </LanguageData>

@@ -34,17 +34,11 @@
             <li Class="DubsBadHygiene.CompProperties_CompBoiler">
                 <BaseCapacity>2000</BaseCapacity>
                 <ThermostatControl>false</ThermostatControl>
-                <!--
-                <effects>
-                    <texPath>DBH/Things/Building/Heating/LogBoilerEffects</texPath>
-                    <graphicClass>DubsBadHygiene.Graphic_FX</graphicClass>
-                    <shaderType>MoteGlow</shaderType>
-                    <drawSize>(2,2)</drawSize>
-                </effects>-->
             </li>
-            <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableBoiler">
+            <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
+                <settingsKey>Boiler</settingsKey>
                 <fuelConsumptionRate>0.05</fuelConsumptionRate>
-                <!-- 1.5 pyrinth per quadrum -->
+                <!-- 0.75 pyrinth per quadrum -->
                 <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
                 <fuelCapacity>10.0</fuelCapacity>
                 <fuelFilter>
@@ -66,7 +60,7 @@
             <li Class="CompProperties_HeatPusher">
                 <compClass>CompHeatPusherPowered</compClass>
                 <heatPerSecond>12</heatPerSecond>
-            </li>      
+            </li>
         </comps>
         <researchPrerequisites>
             <li MayRequire="dbhlitemode">LogBoilers</li>
@@ -118,23 +112,16 @@
             </li>
             <li Class="DubsBadHygiene.CompProperties_SaunaHeater">
                 <compClass>DubsBadHygiene.Comp_SaunaHeater</compClass>
-                <!--
-                <effects>
-                    <texPath>Things/Building/Heating/PyrinthSaunaEffects</texPath>
-                    <graphicClass>DubsBadHygiene.Graphic_FX</graphicClass>
-                    <shaderType>MoteGlow</shaderType>
-                    <drawSize>(2,2)</drawSize>
-                </effects>
-                -->
                 <heatPerSecond>34</heatPerSecond>
                 <heatPushMaxTemperature>70</heatPushMaxTemperature>
             </li>
             <li Class="CompProperties_Effecter">
                 <effecterDef>DV_PyrinthSparkingEffect</effecterDef>
             </li>
-            <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableSauna">
+            <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
+                <settingsKey>Sauna</settingsKey>
                 <fuelConsumptionRate>0.05</fuelConsumptionRate>
-                <!-- 1.5 pyrinth per quadrum -->
+                <!-- 0.75 pyrinth per quadrum -->
                 <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
                 <fuelCapacity>10.0</fuelCapacity>
                 <fuelFilter>
@@ -152,5 +139,5 @@
             <li>PyrinthStove_PyrinthTemperatureRegulationResearch</li>
         </researchPrerequisites>
     </ThingDef>
-    
+
 </Defs>

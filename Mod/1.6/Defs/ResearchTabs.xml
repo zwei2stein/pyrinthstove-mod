@@ -1,13 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- To add a research tab, make a new ResearchTabDef here and then set the <tab> field of your research project to match it -->
-  
-  <ResearchTabDef>
-    <defName>DV_EpochsTab</defName>
-    <label>Epochs</label>
-    <generalTitle>Epochs research projects</generalTitle>
-    <generalDescription>The tab for all manners of research projects for the Epochs mod series.</generalDescription>
-  </ResearchTabDef>
+  <!-- cleaned up and moved to 1.6/Patches/PyrinthBionics_ResearchTab.xml -->
+  <!-- keeping file to with when mod updates -->
 
 </Defs>

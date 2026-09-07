@@ -67,10 +67,11 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
-      <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableStove">
+      <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
+        <settingsKey>Stove</settingsKey>
         <fuelConsumptionRate>0.1</fuelConsumptionRate>
-        <!-- 3 pyrinth per quardum -->
-        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)--> 
+        <!-- 1.5 pyrinth per quardum -->
+        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
         <fuelCapacity>10.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -91,7 +92,7 @@
       <li Class="CompProperties_Glower">
         <glowRadius>10</glowRadius>
         <glowColor>(192,117,77,0)</glowColor>
-      </li>      
+      </li>
     </comps>
     <tickerType>Normal</tickerType>
     <placeWorkers>
@@ -132,7 +133,7 @@
     </graphicData>
     <costList>
       <Steel>100</Steel>
-      <DV_Pyrinth>90</DV_Pyrinth>      
+      <DV_Pyrinth>90</DV_Pyrinth>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
     <altitudeLayer>Building</altitudeLayer>
@@ -162,10 +163,11 @@
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
     <comps>
-      <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableSmithy">
+      <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
+        <settingsKey>Smithy</settingsKey>
         <fuelConsumptionRate>0.1</fuelConsumptionRate>
-        <!-- 3 pyrinth per quardum -->
-        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)--> 
+        <!-- 1.5 pyrinth per quardum -->
+        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
         <fuelCapacity>10.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -179,7 +181,7 @@
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>4</heatPerSecond>
-      </li>      
+      </li>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
@@ -191,9 +193,9 @@
       <li Class="CompProperties_Glower">
         <glowRadius>10</glowRadius>
         <glowColor>(192,117,77,0)</glowColor>
-      </li>      
+      </li>
     </comps>
-    <tickerType>Normal</tickerType>    
+    <tickerType>Normal</tickerType>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -259,10 +261,11 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
-      <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableCrematorium">
+      <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
+        <settingsKey>Crematorium</settingsKey>
         <fuelConsumptionRate>0.2</fuelConsumptionRate>
-        <!-- 6 pyrinth per quardum -->
-        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)--> 
+        <!-- 1.5 pyrinth per quardum -->
+        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
         <fuelCapacity>10.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -272,14 +275,14 @@
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         <canEjectFuel>true</canEjectFuel>
-      </li>   
+      </li>
       <li Class="CompProperties_Effecter">
         <effecterDef>DV_PyrinthSparkingEffect</effecterDef>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>10</glowRadius>
         <glowColor>(192,117,77,0)</glowColor>
-      </li>  
+      </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>12</heatPerSecond>
@@ -358,10 +361,11 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
-      <li Class="PyrinthStove.CompProperties_Refuelable_ConfigurableSmelter">
+      <li Class="PyrinthStove.CompProperties_Refuelable_Configurable">
+        <settingsKey>Smelter</settingsKey>
         <fuelConsumptionRate>0.2</fuelConsumptionRate>
-        <!-- 6 pyrinth per quardum -->
-        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)--> 
+        <!-- 3 pyrinth per quardum -->
+        <!--ConsumptionRatePerTick = fuelConsumptionRate / 60000 (day ticks)-->
         <fuelCapacity>10.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -371,14 +375,14 @@
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         <canEjectFuel>true</canEjectFuel>
-      </li>   
+      </li>
       <li Class="CompProperties_Effecter">
         <effecterDef>DV_PyrinthSparkingEffect</effecterDef>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>10</glowRadius>
         <glowColor>(192,117,77,0)</glowColor>
-      </li>  
+      </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>12</heatPerSecond>
