@@ -13,6 +13,8 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=374
 
 ![](/Publishing/infotable_02.png)
 
+![](/Publishing/infotable_03.png)
+
 ### Steam mod page info
 
 [Steam blurb text is in this repo](/Publishing/steam.txt)
@@ -26,6 +28,8 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=374
 ![](/Publishing/04_boiler.png)
 
 ![](/Publishing/05_sauna.png)
+
+![](/Publishing/06_floor.png)
 
 ![](/Publishing/05_config.png)
 

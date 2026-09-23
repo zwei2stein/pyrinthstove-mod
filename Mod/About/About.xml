@@ -6,8 +6,8 @@
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-    <modVersion>1.4.1</modVersion>
-    <description>Pyrinth powered cooking stove, smithy, smelter and crematorium.</description>
+    <modVersion>1.5.0</modVersion>
+    <description>Pyrinth powered cooking stove, smithy, smelter and crematorium. Also floor!</description>
   <modDependencies>
     <li>
       <packageId>det.epochspyrinth</packageId>
