@@ -5,6 +5,7 @@
     <packageId>zwei2stein.PyrinthStove</packageId>
     <supportedVersions>
         <li>1.6</li>
+        <li>1.7</li>
     </supportedVersions>
     <modVersion>1.5.0</modVersion>
     <description>Pyrinth powered cooking stove, smithy, smelter and crematorium. Also floor!</description>

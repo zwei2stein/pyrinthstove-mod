@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef ParentName="FloorBase">
+        <defName>PyrinthStove_PyrinthFloor</defName>
+        <label>pyrinth floor</label>
+        <description>Flooring made out of Pyrinth mosaic. It is easy to keep sterile and clean. It also glows and heats room.</description>
+        <texturePath>Terrains/PyrinthStove_PyrinthFloor</texturePath>
+        <!-- Vanilla Pollution Stone -->
+        <pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+        <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+        <pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+        <pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+        <!-- Vanilla Pollution Stone -->
+        <isPaintable>false</isPaintable>
+        <edgeType>Hard</edgeType>
+        <renderPrecedence>335</renderPrecedence>
+        <pathCost>0</pathCost>
+        <statBases>
+            <WorkToBuild>1100</WorkToBuild>
+            <Beauty>4</Beauty>
+            <BeautyOutdoors>4</BeautyOutdoors>
+            <Cleanliness>0.5</Cleanliness>
+            <CleaningTimeFactor>0.7</CleaningTimeFactor>
+        </statBases>
+        <meltSnowRadius>2</meltSnowRadius>
+        <heatPerTick>0.01</heatPerTick>
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+            <li>PyrinthStove_PyrinthTemperatureRegulationResearch</li>
+        </researchPrerequisites>
+        <costList>
+            <DV_Pyrinth>5</DV_Pyrinth>
+            <Steel>1</Steel>
+        </costList>
+        <constructEffect>ConstructMetal</constructEffect>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <fertility>0</fertility>
+        <glowRadius>3</glowRadius>
+        <glowColor>(192,117,77,0)</glowColor>
+        <filthAcceptanceMask>
+            <li>None</li>
+        </filthAcceptanceMask>
+        <takeFootprints>false</takeFootprints>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    </TerrainDef>
+    
+</Defs>

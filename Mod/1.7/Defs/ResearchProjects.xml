@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ResearchProjectDef>
+    <defName>PyrinthStove_PyrinthTemperatureRegulationResearch</defName>
+    <label>pyrinth temperature regulation</label>
+    <description>Design and build facilities using pyrinth crystals as a heat source.</description>
+    <baseCost>400</baseCost>
+    <researchViewX>1.50</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <heldByFactionCategoryTags Inherit="False" />
+    <techLevel>Medieval</techLevel>
+    <tab>DV_EpochsTab</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>PyrinthStove_PyrinthUnleashingResearch</defName>
+    <label>pyrinth unleashing</label>
+    <description>Unleash power of pyrinth to power facilities that would be out of reach for conventional fueled sources.</description>
+    <baseCost>800</baseCost>
+    <researchViewX>2.50</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <heldByFactionCategoryTags Inherit="False" />
+    <prerequisites>
+      <li>PyrinthStove_PyrinthTemperatureRegulationResearch</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+    <tab>DV_EpochsTab</tab>
+  </ResearchProjectDef>
+
+</Defs>
+
